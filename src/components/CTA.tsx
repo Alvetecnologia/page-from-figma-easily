@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const CTA = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-purple-800 to-purple-900 relative overflow-hidden">
+    <section id="contato" className="py-20 bg-gradient-to-r from-purple-800 to-purple-900 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
@@ -18,10 +18,10 @@ const CTA = () => {
           Vamos conversar sobre como nossas soluções podem automatizar processos e impulsionar o crescimento da sua empresa.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="bg-white text-purple-800 hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
+          <Button size="lg" className="bg-white text-purple-800 hover:bg-gray-100 px-8 py-4 text-lg font-semibold min-w-[200px]">
             Solicitar Orçamento
           </Button>
-          <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-purple-800 px-8 py-4 text-lg font-semibold">
+          <Button size="lg" className="bg-white text-purple-800 hover:bg-gray-100 px-8 py-4 text-lg font-semibold min-w-[200px]">
             Agendar Reunião
           </Button>
         </div>
