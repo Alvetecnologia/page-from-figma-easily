@@ -49,10 +49,10 @@ const Features = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="group perspective-1000 h-80">
-              <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+            <div key={index} className="group [perspective:1000px] h-80">
+              <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Front of card */}
-                <Card className="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900/50 to-gray-800/50 border-purple-800/30 backface-hidden">
+                <Card className="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900/50 to-gray-800/50 border-purple-800/30 [backface-visibility:hidden]">
                   <CardContent className="p-0 h-full flex flex-col">
                     <div className="h-2/3 overflow-hidden rounded-t-lg">
                       <img 
@@ -70,7 +70,7 @@ const Features = () => {
                 </Card>
                 
                 {/* Back of card */}
-                <Card className="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900/80 to-gray-800/80 border-purple-800/30 backface-hidden rotate-y-180">
+                <Card className="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900/80 to-gray-800/80 border-purple-800/30 [backface-visibility:hidden] [transform:rotateY(180deg)]">
                   <CardContent className="p-6 h-full flex flex-col justify-center">
                     <h3 className="text-xl font-semibold text-white mb-4 text-center">
                       {service.title}
@@ -85,24 +85,6 @@ const Features = () => {
           ))}
         </div>
       </div>
-      
-      <style jsx>{`
-        .perspective-1000 {
-          perspective: 1000px;
-        }
-        .transform-style-preserve-3d {
-          transform-style: preserve-3d;
-        }
-        .backface-hidden {
-          backface-visibility: hidden;
-        }
-        .rotate-y-180 {
-          transform: rotateY(180deg);
-        }
-        .group:hover .group-hover\\:rotate-y-180 {
-          transform: rotateY(180deg);
-        }
-      `}</style>
     </section>
   );
 };
