@@ -27,12 +27,9 @@ const Hero = () => {
             <Button size="lg" className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 text-lg">
               Iniciar Projeto
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-4 text-lg">
-              Ver Portfólio
-            </Button>
           </div>
           <div className="mt-12 text-sm text-gray-400">
-            Consultoria gratuita • Desenvolvimento ágil • Suporte contínuo
+            Consultoria e desenvolvimento • Soluções sob medida • Suporte contínuo
           </div>
         </div>
       </div>
